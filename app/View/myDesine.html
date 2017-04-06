@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$msg}</title>
+</head>
+<body>
+<h1>{$msg}</h1>
+<h2 id="time" va="{$time}"></h2>
+</body>
+<script type="text/javascript">
+	window.onload = function ()
+	{
+		var ti = document.getElementById('time');
+		var i = document.getElementById('time').getAttribute('va');
+		ti.innerHTML = i+'秒后跳转';
+		setInterval(setTime,1000);
+
+		function setTime()
+		{
+			i--;
+			ti.innerHTML = i+'秒后跳转';
+			if(i==0){
+				window.location = '{$sr}';
+			}
+		}
+	}
+</script>
+</html>
