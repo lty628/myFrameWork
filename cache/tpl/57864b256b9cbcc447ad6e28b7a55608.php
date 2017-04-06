@@ -30,8 +30,8 @@
   <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
 
     <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
-      <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
-      <li class="am-dropdown" data-am-dropdown>
+      <!-- <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li> -->
+<!--       <li class="am-dropdown" data-am-dropdown>
         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
           <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
         </a>
@@ -40,19 +40,22 @@
           <li><a href="javascript:;"><span class="am-icon-cog"></span> 设置</a></li>
           <li><a href="<?=$sr;?>?c=Admin&a=logOut"><span class="am-icon-power-off"></span> 退出</a></li>
         </ul>
-      </li>
+      </li> -->
+      <li><a href="?c=Admin&a=index">首页<span class="am-icon-home"></span> </a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li><a href="javascript:;">欢迎：<?=$_SESSION['username'];?>&nbsp;<span class="am-icon-user"></span> </a></li>
       <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+      <li><a href="<?=$sr;?>?c=Admin&a=logOut"><span class="am-icon-power-off"></span> 退出</a></li>
     </ul>
   </div>
 </header>
 
 <div class="am-cf admin-main">
   <!-- sidebar start -->
-  <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
-    <div class="am-offcanvas-bar admin-offcanvas-bar">
-      <ul class="am-list admin-sidebar-list">
+  <div class="admin-sidebar am-offcanvas" id="admin-offcanvas" style="width:60px;height:80px;">
+    <div class="am-offcanvas-bar admin-offcanvas-bar" >
+<!--       <ul class="am-list admin-sidebar-list">
         <li><a href="<?=$sr;?>?c=Admin&a=index"><span class="am-icon-home"></span> 首页</a></li>
-      <!--   <li class="admin-parent">
+        <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-file"></span> 页面模块 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
             <li><a href="admin-user.html" class="am-cf"><span class="am-icon-check"></span> 个人资料<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
@@ -61,12 +64,12 @@
             <li><a href="admin-log.html"><span class="am-icon-calendar"></span> 系统日志</a></li>
             <li><a href="admin-404.html"><span class="am-icon-bug"></span> 404</a></li>
           </ul>
-        </li> -->
+        </li>
         <li><a href="<?=$sr;?>?c=Admin&a=table"><span class="am-icon-table"></span> 表格</a></li>
         <li><a href="<?=$sr;?>?c=Admin&a=form"><span class="am-icon-pencil-square-o"></span> 表单</a></li>
         <li><a href="<?=$sr;?>?c=Admin&a=logOut"><span class="am-icon-sign-out"></span> 退出</a></li>
-      </ul>
-
+      </ul> -->
+<!-- 
       <div class="am-panel am-panel-default admin-sidebar-panel">
         <div class="am-panel-bd">
           <p><span class="am-icon-bookmark"></span> 公告</p>
@@ -79,6 +82,6 @@
           <p><span class="am-icon-tag"></span> wiki</p>
           <p>Welcome to the Amaze UI wiki!</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>

@@ -32,6 +32,7 @@ class User extends Controller
 			if($result[0]['password'] == md5($_POST['password']))
 			{
 				$_SESSION['id'] = $result[0]['id'];
+				$_SESSION['username'] = $result[0]['username'];
 				$this->success('登陆成功','?c=Admin&a=index');
 			}else{
 				$this->error('密码错误','?c=User&a=login');

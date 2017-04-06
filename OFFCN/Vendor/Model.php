@@ -154,7 +154,7 @@ class Model
 			),
 			$sql
 		);
-		
+		//echo $sql;
 		$this->sql = $sql;
 		
 		return $this->exec($sql,true);
@@ -211,7 +211,7 @@ class Model
 				),
 				$sql
 		);
-		
+		//echo $sql;
 		$this->sql = $sql;
 		
 		$data = $this->query($sql);

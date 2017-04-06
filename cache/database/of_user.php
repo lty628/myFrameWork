@@ -8,4 +8,7 @@
   4 => 'phone',
   5 => 'qq',
   6 => 'brief',
+  7 => 'awardType',
+  8 => 'award',
+  9 => 'updatetime',
 );?>

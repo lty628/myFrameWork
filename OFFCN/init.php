@@ -6,6 +6,7 @@ class Init
 	public static function start()
 	{
 		session_start();
+		date_default_timezone_set('PRC');//将来改改位置，用配置文件更好
 		self::dC();//自定义常量
 		$Psr4 = include 'Psr4.php';
 		$Psr4 = include 'global.func.php';

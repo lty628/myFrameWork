@@ -48,7 +48,7 @@
           <table class="am-table am-table-striped am-table-hover table-main">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" /></th><th class="table-id">ID</th><th class="table-title">学员姓名</th><th class="table-type">联系号码</th><th class="table-author am-hide-sm-only">联系QQ</th><th class="table-date am-hide-sm-only">联系邮件</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" /></th><th class="table-id">ID</th><th class="table-title">学员姓名</th><th class="table-type">联系号码</th><th class="table-author am-hide-sm-only">获奖类型</th><th class="table-date am-hide-sm-only">领奖认证ID</th><th class="table-set">操作</th>
               </tr>
           </thead>
           <tbody>
@@ -58,8 +58,8 @@
               <td class="userid">{$val['id']}</td>
               <td><a href="javascript:;">{$val['username']}</a></td>
               <td><a href="javascript:;">{$val['phone']}</a></td>
-              <td class="am-hide-sm-only">{$val['qq']}</td>
-              <td class="am-hide-sm-only">{$val['email']}</td>
+              <td class="am-hide-sm-only">{$val['awardType']}</td>
+              <td class="am-hide-sm-only">{$val['award']}</td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
